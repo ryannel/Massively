@@ -30,6 +30,9 @@
         {{!-- Intro --}}
         {{#is "home"}}
         <div id="intro">
+            {{#if @site.logo}}
+                <img class="logo" src="{{@site.logo}}" alt="profile picture" />
+            {{/if}}
             <h1>{{@site.title}}</h1>
             <p>{{@site.description}}</p>
             <ul class="actions">
@@ -40,11 +43,7 @@
 
         {{!-- Header --}}
         <header id="header">
-            {{#if @site.logo}}
-                <a href="{{@site.url}}" class="logo image"><img src="{{@site.logo}}" alt="{{@site.title}}" /></a>
-            {{else}}
-                <a href="{{@site.url}}" class="logo">{{@site.title}}</a>
-            {{/if}}
+            <a href="{{@site.url}}" class="logo">{{@site.title}}</a>
         </header>
 
         {{!-- Nav --}}

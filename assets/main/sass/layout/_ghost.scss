@@ -6,14 +6,11 @@
     margin: 0 auto;
 }
 
-#header .logo.image {
-    padding: 0;
-    border: none;
-}
-
-#header .logo.image img {
-    height: 75px;
+#intro img.logo {
+    height: 180px;
     transform: none !important;
+    border-radius: 50%;
+    margin-bottom: 2rem;
 }
 
 .content {
