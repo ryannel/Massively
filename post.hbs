@@ -10,7 +10,12 @@ into the {body} of the default.hbs template --}}
     <section class="post">
 
         <header class="major">
-            <span class="date">{{date format="MMMM D, YYYY"}}</span>
+            <div class="meta">
+                <span class="read-time">{{reading_time}}</span>
+                <span class="date">{{date format="MMMM D, YYYY"}}</span>
+                <span class="tags">{{tags}}</span>  
+            </div>
+            
             <h1>{{title}}</h1>
             {{#if custom_excerpt}}
                 <p class="content">{{custom_excerpt}}</p>

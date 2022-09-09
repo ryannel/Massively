@@ -15,11 +15,10 @@
 	header {
 		cursor: default;
 
-		> .date {
+		> .meta > .date {
 			display: block;
 			font-size: 0.8rem;
 			height: 1;
-			margin: 0 0 (_size(element-margin) * 0.5) 0;
 			position: relative;
 		}
 
@@ -61,9 +60,8 @@
 				text-align: center;
 			}
 
-			> .date {
+			> .meta > .date {
 				font-size: 1rem;
-				margin: 0 0 (_size(element-margin) * 2) 0;
 
 				&:before, &:after {
 					content: '';
@@ -100,7 +98,7 @@
 	@mixin color-section($p: null) {
 		header {
 			&.major {
-				.date {
+				.meta .date {
 					&:before, &:after {
 						border-top-color: _palette($p, border);
 					}

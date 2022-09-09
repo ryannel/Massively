@@ -33,8 +33,13 @@
 
 			header {
 				&.major {
-					> .date {
+					> .meta {
 						margin-top: -2rem;
+						margin: 0 0 (_size(element-margin) * 2) 0;
+
+						> .read-time {
+							color: gray;
+						}
 					}
 
 					> h1, h2 {
@@ -58,7 +63,7 @@
 
 				header {
 					&.major {
-						> .date {
+						> .meta {
 							margin-top: -1rem;
 							margin-bottom: _size(element-margin);
 						}
